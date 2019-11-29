@@ -1,0 +1,153 @@
+formatter: swift
+options:
+  name: BitriseAPI # the name of the API
+  baseURL: "https://api.bitrise.io/v0.1"
+  authors: "Jeffrey MACKO"
+  homepage: "https://api-docs.bitrise.io/#/"
+  fixedWidthIntegers: false # whether to use types like Int32 and Int64
+  mutableModels: true # whether model properties are mutable
+  safeOptionalDecoding: true # set invalid optionals to nil instead of throwing
+  safeArrayDecoding: true # filter out invalid items in array instead of throwing
+  modelPrefix: null # applied to model classes and enums
+  modelSuffix: null # applied to model classes
+  modelType: struct # can be struct or class
+  modelInheritance: true # must be false for struct modelType
+  modelProtocol: APIBaseModel # the protocol all models conform to
+  modelNames: {
+    "v0.ActivityEventListResponseModel" : "ActivityEventListResponseModel",
+    "v0.ActivityEventResponseItemModel" : "ActivityEventResponseItemModel",
+    "v0.AddOnAppResponseItemModel" : "AddOnAppResponseItemModel",
+    "v0.AddonsListResponseModel" : "AddonsListResponseModel",
+    "v0.AddonsShowResponseModel" : "AddonsShowResponseModel",
+    "v0.AndroidKeystoreFileUploadParams" : "AndroidKeystoreFileUploadParams",
+    "v0.AppAddOnResponseItemModel" : "AppAddOnResponseItemModel",
+    "v0.AppAddOnsListResponseModel" : "AppAddOnsListResponseModel",
+    "v0.AppConfigRequestParam" : "AppConfigRequestParam",
+    "v0.AppConfigRespModel" : "AppConfigRespModel",
+    "v0.AppFinishParams" : "AppFinishParams",
+    "v0.AppFinishRespModel" : "AppFinishRespModel",
+    "v0.AppListResponseModel" : "AppListResponseModel",
+    "v0.AppRespModel" : "AppRespModel",
+    "v0.AppResponseItemModel" : "AppResponseItemModel",
+    "v0.AppShowResponseModel" : "AppShowResponseModel",
+    "v0.AppUploadParams" : "AppUploadParams",
+    "v0.AppWebhookCreateParams" : "AppWebhookCreateParams",
+    "v0.AppWebhookCreatedResponseModel" : "AppWebhookCreatedResponseModel",
+    "v0.AppWebhookDeletedResponseModel" : "AppWebhookDeletedResponseModel",
+    "v0.AppWebhookListResponseModel" : "AppWebhookListResponseModel",
+    "v0.AppWebhookResponseItemModel" : "AppWebhookResponseItemModel",
+    "v0.AppWebhookResponseModel" : "AppWebhookResponseModel",
+    "v0.AppWebhookUpdateParams" : "AppWebhookUpdateParams",
+    "v0.ArtifactDeleteResponseModel" : "ArtifactDeleteResponseModel",
+    "v0.ArtifactListElementResponseModel" : "ArtifactListElementResponseModel",
+    "v0.ArtifactListResponseModel" : "ArtifactListResponseModel",
+    "v0.ArtifactResponseItemModel" : "ArtifactResponseItemModel",
+    "v0.ArtifactShowResponseModel" : "ArtifactShowResponseModel",
+    "v0.ArtifactUpdateParams" : "ArtifactUpdateParams",
+    "v0.AvatarCandidateCreateBulkParams" : "AvatarCandidateCreateBulkParams",
+    "v0.AvatarCandidateCreateParams" : "AvatarCandidateCreateParams",
+    "v0.AvatarCandidateCreateResponseItem" : "AvatarCandidateCreateResponseItem",
+    "v0.AvatarCandidateCreateResponseItems" : "AvatarCandidateCreateResponseItems",
+    "v0.AvatarPromoteParams" : "AvatarPromoteParams",
+    "v0.AvatarPromoteResponseItemModel" : "AvatarPromoteResponseItemModel",
+    "v0.AvatarPromoteResponseModel" : "AvatarPromoteResponseModel",
+    "v0.BranchListResponseModel" : "BranchListResponseModel",
+    "v0.BuildAbortParams" : "BuildAbortParams",
+    "v0.BuildAbortResponseModel" : "BuildAbortResponseModel",
+    "v0.BuildCertificateListResponseModel" : "BuildCertificateListResponseModel",
+    "v0.BuildCertificateResponseItemModel" : "BuildCertificateResponseItemModel",
+    "v0.BuildCertificateResponseModel" : "BuildCertificateResponseModel",
+    "v0.BuildCertificateUpdateParams" : "BuildCertificateUpdateParams",
+    "v0.BuildCertificateUploadParams" : "BuildCertificateUploadParams",
+    "v0.BuildListAllResponseItemModel" : "BuildListAllResponseItemModel",
+    "v0.BuildListAllResponseModel" : "BuildListAllResponseModel",
+    "v0.BuildListResponseModel" : "BuildListResponseModel",
+    "v0.BuildLogChunkItemResponseModel" : "BuildLogChunkItemResponseModel",
+    "v0.BuildLogInfoResponseModel" : "BuildLogInfoResponseModel",
+    "v0.BuildParamsEnvironment" : "BuildParamsEnvironment",
+    "v0.BuildRequestListResponseModel" : "BuildRequestListResponseModel",
+    "v0.BuildRequestResponseItemModel" : "BuildRequestResponseItemModel",
+    "v0.BuildRequestUpdateParams" : "BuildRequestUpdateParams",
+    "v0.BuildRequestUpdateResponseModel" : "BuildRequestUpdateResponseModel",
+    "v0.BuildResponseItemModel" : "BuildResponseItemModel",
+    "v0.BuildShowResponseModel" : "BuildShowResponseModel",
+    "v0.BuildTriggerParams" : "BuildTriggerParams",
+    "v0.BuildTriggerParamsBuildParams" : "BuildTriggerParamsBuildParams",
+    "v0.BuildTriggerParamsHookInfo" : "BuildTriggerParamsHookInfo",
+    "v0.BuildTriggerRespModel" : "BuildTriggerRespModel",
+    "v0.BuildWorkflowListResponseModel" : "BuildWorkflowListResponseModel",
+    "v0.CommitPaths" : "CommitPaths",
+    "v0.FindAvatarCandidateResponse" : "FindAvatarCandidateResponse",
+    "v0.FindAvatarCandidateResponseItem" : "FindAvatarCandidateResponseItem",
+    "v0.OrganizationDataModel" : "OrganizationDataModel",
+    "v0.OrganizationListRespModel" : "OrganizationListRespModel",
+    "v0.OrganizationOwner" : "OrganizationOwner",
+    "v0.OrganizationRespModel" : "OrganizationRespModel",
+    "v0.OwnerAccountResponseModel" : "OwnerAccountResponseModel",
+    "v0.OwnerAddOnResponseItemModel" : "OwnerAddOnResponseItemModel",
+    "v0.OwnerAddOnsListResponseModel" : "OwnerAddOnsListResponseModel",
+    "v0.PagingResponseModel" : "PagingResponseModel",
+    "v0.PlanDataModel" : "PlanDataModel",
+    "v0.ProjectFileStorageDocumentUpdateParams" : "ProjectFileStorageDocumentUpdateParams",
+    "v0.ProjectFileStorageListResponseModel" : "ProjectFileStorageListResponseModel",
+    "v0.ProjectFileStorageResponseItemModel" : "ProjectFileStorageResponseItemModel",
+    "v0.ProjectFileStorageResponseModel" : "ProjectFileStorageResponseModel",
+    "v0.ProjectFileStorageUploadParams" : "ProjectFileStorageUploadParams",
+    "v0.ProvProfileDocumentUpdateParams" : "ProvProfileDocumentUpdateParams",
+    "v0.ProvisionProfileListResponseModel" : "ProvisionProfileListResponseModel",
+    "v0.ProvisionProfileResponseItemModel" : "ProvisionProfileResponseItemModel",
+    "v0.ProvisionProfileResponseModel" : "ProvisionProfileResponseModel",
+    "v0.ProvisionProfileUploadParams" : "ProvisionProfileUploadParams",
+    "v0.SSHKeyRespModel" : "SSHKeyRespModel",
+    "v0.SSHKeyUploadParams" : "SSHKeyUploadParams",
+    "v0.TestDeviceListResponseModel" : "TestDeviceListResponseModel",
+    "v0.TestDeviceResponseItemModel" : "TestDeviceResponseItemModel",
+    "v0.UserPlanDataModel" : "UserPlanDataModel",
+    "v0.UserPlanRespModel" : "UserPlanRespModel",
+    "v0.UserProfileDataModel" : "UserProfileDataModel",
+    "v0.UserProfileRespModel" : "UserProfileRespModel",
+    "v0.WebhookDeliveryItemResponseModel" : "WebhookDeliveryItemResponseModel",
+    "v0.WebhookDeliveryItemShowResponseModel" : "WebhookDeliveryItemShowResponseModel",
+    "v0.WebhookRespModel" : "WebhookRespModel"
+  }
+  enumNames: {} # override enum type names
+  enumUndecodableCase: false # whether to add undecodable case to enums
+  codableResponses: true # constrains all responses/model to be Codable
+  propertyNames: {} # override property names
+  typeAliases:
+    ID: UUID
+    DateTime: Date
+    File: Data
+  dependencies:
+    - name: Alamofire
+      pod: Alamofire
+      github: Alamofire/Alamofire
+      version: 4.9.0
+templateFiles:
+  - path: README.md
+  - path: Package.swift
+  - path: Cartfile
+  - path: Info.plist
+  - path: Sources/API.swift
+  - path: Sources/Coding.swift
+  - path: Sources/APIRequest.swift
+  - path: Sources/APIClient.swift
+  - path: Sources/APIService.swift
+  - path: Sources/APIClientError.swift
+  - path: Sources/APIResponse.swift
+  - path: Sources/APIResult.swift
+  - path: Sources/RequestBehaviour.swift
+  - path: Sources/AnyCodable.swift
+  - path: Sources/API.swift
+    destination: "Sources/{{ options.name }}.swift"
+  - path: Podspec.podspec
+    destination: "{{ options.name }}.podspec"
+  - path: Sources/Enum.swift
+    context: enums
+    destination: "Sources/Enums/{{ enumName }}.swift"
+  - path: Sources/Model.swift
+    context: schemas
+    destination: "Sources/Models/{{ type }}.swift"
+  - path: Sources/Request.swift
+    context: operations
+    destination: "Sources/Requests{% if tag %}/{{ tag|upperCamelCase }}{% endif %}/{{ type }}.swift"

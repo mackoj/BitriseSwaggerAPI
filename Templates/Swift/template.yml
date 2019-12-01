@@ -128,7 +128,6 @@ templateFiles:
   - path: Package.swift
   - path: Cartfile
   - path: Info.plist
-  - path: Sources/API.swift
   - path: Sources/Coding.swift
   - path: Sources/APIRequest.swift
   - path: Sources/APIClient.swift

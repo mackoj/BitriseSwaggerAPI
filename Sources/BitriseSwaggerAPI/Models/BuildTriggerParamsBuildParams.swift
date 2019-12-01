@@ -32,7 +32,7 @@ public struct BuildTriggerParamsBuildParams: APIBaseModel {
 
     public var pullRequestHeadBranch: String?
 
-    public var pullRequestId: [String: Any]?
+    public var pullRequestId: [String: String]?
 
     public var pullRequestMergeBranch: String?
 

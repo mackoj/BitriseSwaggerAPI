@@ -96,15 +96,16 @@ extension BitriseAPI.AvatarCandidate {
                 } else {
                     fatalError("Response does not have success or failure response")
                 }
-            }
+            }            //
 
-            public var response: Any {
+            public var response: AvatarCandidateCreateResponseItems {
                 switch self {
                 case .status201(let response): return response
-                case .status400(let response): return response
-                case .status401(let response): return response
-                case .status404(let response): return response
-                case .status500(let response): return response
+				default: return AvatarCandidateCreateResponseItems()
+                // case .status400(let response): return response
+                // case .status401(let response): return response
+                // case .status404(let response): return response
+                // case .status500(let response): return response
                 }
             }
 

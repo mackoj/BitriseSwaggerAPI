@@ -6,4 +6,4 @@
 
 import Foundation
 
-// public typealias AvatarCandidateCreateResponseItems = [V0AvatarCandidateCreateResponseItems]
+public typealias AvatarCandidateCreateResponseItems = [AvatarCandidateCreateResponseItem]

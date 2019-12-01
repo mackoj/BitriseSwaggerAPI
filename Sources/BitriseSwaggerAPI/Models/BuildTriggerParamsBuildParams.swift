@@ -44,7 +44,7 @@ public struct BuildTriggerParamsBuildParams: APIBaseModel {
 
     public var workflowId: String?
 
-    public init(branch: String? = nil, branchDest: String? = nil, branchDestRepoOwner: String? = nil, branchRepoOwner: String? = nil, buildRequestSlug: String? = nil, commitHash: String? = nil, commitMessage: String? = nil, commitPaths: [CommitPaths]? = nil, diffURL: String? = nil, environments: [BuildParamsEnvironment]? = nil, pullRequestAuthor: String? = nil, pullRequestHeadBranch: String? = nil, pullRequestId: [String: Any]? = nil, pullRequestMergeBranch: String? = nil, pullRequestRepositoryURL: String? = nil, skipGitStatusReport: Bool? = nil, tag: String? = nil, workflowId: String? = nil) {
+    public init(branch: String? = nil, branchDest: String? = nil, branchDestRepoOwner: String? = nil, branchRepoOwner: String? = nil, buildRequestSlug: String? = nil, commitHash: String? = nil, commitMessage: String? = nil, commitPaths: [CommitPaths]? = nil, diffURL: String? = nil, environments: [BuildParamsEnvironment]? = nil, pullRequestAuthor: String? = nil, pullRequestHeadBranch: String? = nil, pullRequestId: [String: String]? = nil, pullRequestMergeBranch: String? = nil, pullRequestRepositoryURL: String? = nil, skipGitStatusReport: Bool? = nil, tag: String? = nil, workflowId: String? = nil) {
         self.branch = branch
         self.branchDest = branchDest
         self.branchDestRepoOwner = branchDestRepoOwner

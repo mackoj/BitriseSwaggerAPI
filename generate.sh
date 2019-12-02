@@ -1,4 +1,4 @@
-swaggen generate "swagger.yml".             \
+swaggen generate "swagger.yml"              \
   --language swift                          \
   --template "Templates/Swift/template.yml" \
   --destination "generate"                  \

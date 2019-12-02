@@ -126,17 +126,29 @@ options:
 templateFiles:
   - path: README.md
   - path: APIClient.swift
+    destination: "Sources/BitriseSwaggerAPI/APIClient.swift"
   - path: APIClientError.swift
+    destination: "Sources/BitriseSwaggerAPI/APIClientError.swift"
   - path: APIRequest.swift
+    destination: "Sources/BitriseSwaggerAPI/APIRequest.swift"
   - path: APIResponse.swift
+    destination: "Sources/BitriseSwaggerAPI/APIResponse.swift"
   - path: APIResult.swift
+    destination: "Sources/BitriseSwaggerAPI/APIResult.swift"
   - path: APIService.swift
+    destination: "Sources/BitriseSwaggerAPI/APIService.swift"
   - path: AnyCodable.swift
+    destination: "Sources/BitriseSwaggerAPI/AnyCodable.swift"
   - path: Cartfile
+    destination: "Sources/BitriseSwaggerAPI/Cartfile"
   - path: Coding.swift
+    destination: "Sources/BitriseSwaggerAPI/Coding.swift"
   - path: Info.plist
+    destination: "Sources/BitriseSwaggerAPI/Info.plist"
   - path: Package.swift
+    destination: "Sources/BitriseSwaggerAPI/Package.swift"
   - path: RequestBehaviour.swift
+    destination: "Sources/BitriseSwaggerAPI/RequestBehaviour.swift"
   - path: API.swift
     destination: "Sources/BitriseSwaggerAPI/{{ options.name }}.swift"
   - path: Podspec.podspec

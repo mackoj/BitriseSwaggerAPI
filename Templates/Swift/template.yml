@@ -125,28 +125,28 @@ options:
       version: 4.9.0
 templateFiles:
   - path: README.md
-  - path: Package.swift
+  - path: APIClient.swift
+  - path: APIClientError.swift
+  - path: APIRequest.swift
+  - path: APIResponse.swift
+  - path: APIResult.swift
+  - path: APIService.swift
+  - path: AnyCodable.swift
   - path: Cartfile
+  - path: Coding.swift
   - path: Info.plist
-  - path: Sources/Coding.swift
-  - path: Sources/APIRequest.swift
-  - path: Sources/APIClient.swift
-  - path: Sources/APIService.swift
-  - path: Sources/APIClientError.swift
-  - path: Sources/APIResponse.swift
-  - path: Sources/APIResult.swift
-  - path: Sources/RequestBehaviour.swift
-  - path: Sources/AnyCodable.swift
-  - path: Sources/API.swift
-    destination: "Sources/{{ options.name }}.swift"
+  - path: Package.swift
+  - path: RequestBehaviour.swift
+  - path: API.swift
+    destination: "Sources/BitriseSwaggerAPI/{{ options.name }}.swift"
   - path: Podspec.podspec
     destination: "{{ options.name }}.podspec"
-  - path: Sources/Enum.swift
+  - path: Enum.swift
     context: enums
-    destination: "Sources/Enums/{{ enumName }}.swift"
-  - path: Sources/Model.swift
+    destination: "Sources/BitriseSwaggerAPI/Enums/{{ enumName }}.swift"
+  - path: Model.swift
     context: schemas
-    destination: "Sources/Models/{{ type }}.swift"
-  - path: Sources/Request.swift
+    destination: "Sources/BitriseSwaggerAPI/Models/{{ type }}.swift"
+  - path: Request.swift
     context: operations
-    destination: "Sources/Requests{% if tag %}/{{ tag|upperCamelCase }}{% endif %}/{{ type }}.swift"
+    destination: "Sources/BitriseSwaggerAPI/Requests{% if tag %}/{{ tag|upperCamelCase }}{% endif %}/{{ type }}.swift"

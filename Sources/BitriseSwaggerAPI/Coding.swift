@@ -33,7 +33,7 @@ extension APIBaseModel {
             let jsonDictionary = try? JSONSerialization.jsonObject(with: jsonData) as? [String: Any] else {
                 return [:]
         }
-        return jsonDictionary ?? [:]
+        return jsonDictionary
     }
 }
 

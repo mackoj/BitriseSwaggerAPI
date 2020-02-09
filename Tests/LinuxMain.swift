@@ -3,5 +3,5 @@ import XCTest
 import BitriseSwaggerAPITests
 
 var tests = [XCTestCaseEntry]()
-tests += BitriseSwaggerAPITests.allTests()
+tests += BitriseSwaggerAPIClientTests.allTests()
 XCTMain(tests)

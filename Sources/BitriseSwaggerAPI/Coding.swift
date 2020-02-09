@@ -5,8 +5,7 @@
 //
 
 import Foundation
-
-public protocol APIBaseModel: Codable, Equatable { }
+import AnyCodable
 
 public typealias DateTime = Date
 public typealias File = Data
@@ -130,11 +129,7 @@ extension KeyedDecodingContainer {
         do {
             container = try nestedUnkeyedContainer(forKey: key)
         } catch {
-            if BitriseAPI.safeArrayDecoding {
-                return array
-            } else {
-                throw error
-            }
+            return array
         }
 
         while !container.isAtEnd {
@@ -142,12 +137,7 @@ extension KeyedDecodingContainer {
                 let element = try container.decode(T.self)
                 array.append(element)
             } catch {
-                if BitriseAPI.safeArrayDecoding {
-                    // hack to advance the current index
                     _ = try? container.decode(AnyCodable.self)
-                } else {
-                    throw error
-                }
             }
         }
         return array
@@ -164,15 +154,7 @@ extension KeyedDecodingContainer {
     }
 
     fileprivate func decodeOptional<T>(_ closure: () throws -> T? ) throws -> T? {
-        if BitriseAPI.safeOptionalDecoding {
-            do {
-                return try closure()
-            } catch {
-                return nil
-            }
-        } else {
-            return try closure()
-        }
+        return try closure()
     }
 }
 
@@ -211,7 +193,7 @@ extension DateFormatter {
     }
 }
 
-let dateDecoder: (Decoder) throws -> Date = { decoder in
+public let dateDecoder: (Decoder) throws -> Date = { decoder in
         let container = try decoder.singleValueContainer()
         let string = try container.decode(String.self)
 
@@ -307,56 +289,49 @@ extension DateFormatter {
 // for parameter encoding
 
 extension DateDay {
-    func encode() -> Any {
+    public func encode() -> Any {
         return DateDay.dateFormatter.string(from: date)
     }
 }
 
-extension Date {
-    func encode() -> Any {
-        return BitriseAPI.dateEncodingFormatter.string(from: self)
-    }
-}
-
 extension URL {
-    func encode() -> Any {
+    public func encode() -> Any {
         return absoluteString
     }
 }
 
 extension RawRepresentable {
-    func encode() -> Any {
+    public func encode() -> Any {
         return rawValue
     }
 }
 
 extension Array where Element: RawRepresentable {
-    func encode() -> [Any] {
+    public func encode() -> [Any] {
         return map { $0.rawValue }
     }
 }
 
 extension Dictionary where Key == String, Value: RawRepresentable {
-    func encode() -> [String: Any] {
+    public func encode() -> [String: Any] {
         return mapValues { $0.rawValue }
     }
 }
 
 extension UUID {
-    func encode() -> Any {
+    public func encode() -> Any {
         return uuidString
     }
 }
 
 extension String {
-    func encode() -> Any {
+    public func encode() -> Any {
         return self
     }
 }
 
 extension Data {
-
-    func encode() -> Any {
+    public func encode() -> Any {
         return self
     }
 }

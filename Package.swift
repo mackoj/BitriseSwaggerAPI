@@ -4,25 +4,23 @@
 import PackageDescription
 
 let package = Package(
-    name: "BitriseSwaggerAPI",
-    products: [
-        // Products define the executables and libraries produced by a package, and make them visible to other packages.
-        .library(
-            name: "BitriseSwaggerAPI",
-            targets: ["BitriseSwaggerAPI"]),
-    ],
-    dependencies: [
-        .package(url: "https://github.com/Alamofire/Alamofire.git", .exact("4.9.0")),
-    ],
-    targets: [
-        // Targets are the basic building blocks of a package. A target can define a module or a test suite.
-        // Targets can depend on other targets in this package, and on products in packages which this package depends on.
-        .target(
-            name: "BitriseSwaggerAPI",
-            dependencies: ["Alamofire"], 
-            path: "Sources"),
-        .testTarget(
-            name: "BitriseSwaggerAPITests",
-            dependencies: ["BitriseSwaggerAPI"]),
-    ]
+  name: "BitriseSwaggerAPIClient",
+  products: [
+    .library(name: "BitriseSwaggerAPI", targets: ["BitriseSwaggerAPI"]),
+    .library(name: "BitriseSwaggerAPIClient", targets: ["BitriseSwaggerAPIClient"]),
+  ],
+  dependencies: [
+    .package(url: "https://github.com/Flight-School/AnyCodable.git", from: "0.2.3"),
+    .package(url: "https://github.com/Alamofire/Alamofire.git", .exact("4.9.0")),
+    .package(url: "https://github.com/swift-server/async-http-client.git", from: "1.0.1"),
+  ],
+  targets: [
+    .target(name: "BitriseSwaggerAPI", dependencies: ["AnyCodable"]),
+    .target(
+      name: "BitriseSwaggerAPIClient",
+      dependencies: ["BitriseSwaggerAPI", "Alamofire"]),
+    .testTarget(
+      name: "BitriseSwaggerAPIClientTests",
+      dependencies: ["BitriseSwaggerAPIClient"]),
+  ]
 )

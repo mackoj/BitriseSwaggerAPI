@@ -125,40 +125,29 @@ options:
       version: 4.9.0
 templateFiles:
   - path: README.md
-  - path: APIClient.swift
-    destination: "Sources/BitriseSwaggerAPI/APIClient.swift"
-  - path: APIClientError.swift
-    destination: "Sources/BitriseSwaggerAPI/APIClientError.swift"
-  - path: APIRequest.swift
-    destination: "Sources/BitriseSwaggerAPI/APIRequest.swift"
-  - path: APIResponse.swift
-    destination: "Sources/BitriseSwaggerAPI/APIResponse.swift"
-  - path: APIResult.swift
-    destination: "Sources/BitriseSwaggerAPI/APIResult.swift"
-  - path: APIService.swift
-    destination: "Sources/BitriseSwaggerAPI/APIService.swift"
-  - path: AnyCodable.swift
-    destination: "Sources/BitriseSwaggerAPI/AnyCodable.swift"
-  - path: Cartfile
-    destination: "Sources/BitriseSwaggerAPI/Cartfile"
-  - path: Coding.swift
-    destination: "Sources/BitriseSwaggerAPI/Coding.swift"
-  - path: Info.plist
-    destination: "Sources/BitriseSwaggerAPI/Info.plist"
   - path: Package.swift
-    destination: "Sources/BitriseSwaggerAPI/Package.swift"
-  - path: RequestBehaviour.swift
-    destination: "Sources/BitriseSwaggerAPI/RequestBehaviour.swift"
-  - path: API.swift
-    destination: "Sources/BitriseSwaggerAPI/{{ options.name }}.swift"
+  - path: Cartfile
+  - path: Info.plist
   - path: Podspec.podspec
     destination: "{{ options.name }}.podspec"
-  - path: Enum.swift
+  - path: Sources/SharedCode/APIClientError.swift
+  - path: Sources/SharedCode/APIResult.swift
+  - path: Sources/Client/APIClient.swift
+  - path: Sources/Client/RequestBehaviour.swift
+  - path: Sources/Models/AnyCodable.swift
+  - path: Sources/Models/APIModel.swift
+  - path: Sources/Models/Coding.swift
+  - path: Sources/Models/Enum.swift
     context: enums
-    destination: "Sources/BitriseSwaggerAPI/Enums/{{ enumName }}.swift"
-  - path: Model.swift
+    destination: "Sources/Models/Enums/{{ enumName }}.swift"
+  - path: Sources/Models/Model.swift
     context: schemas
-    destination: "Sources/BitriseSwaggerAPI/Models/{{ type }}.swift"
-  - path: Request.swift
+    destination: "Sources/Models/Models/{{ type }}.swift"
+  - path: Sources/Requests/AnyRequest.swift
+  - path: Sources/Requests/API.swift
+  - path: Sources/Requests/APIRequest.swift
+  - path: Sources/Requests/APIResponse.swift
+  - path: Sources/Requests/APIService.swift
+  - path: Sources/Requests/Request.swift
     context: operations
-    destination: "Sources/BitriseSwaggerAPI/Requests{% if tag %}/{{ tag|upperCamelCase }}{% endif %}/{{ type }}.swift"
+    destination: "Sources/Requests{% if tag %}/{{ tag|upperCamelCase }}{% endif %}/{{ type }}.swift"

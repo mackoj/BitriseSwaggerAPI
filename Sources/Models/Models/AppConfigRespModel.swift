@@ -6,4 +6,4 @@
 
 import Foundation
 
-public typealias AppConfigRespModel = [String: Any]
+public typealias AppConfigRespModel = [String: String]

@@ -5,10 +5,10 @@
 //
 
 import Foundation
-import BitriseSwaggerAPIModels
-import BitriseSwaggerAPISharedCode
+import BitriseAPIModels
+import BitriseAPISharedCode
 
-extension BitriseSwaggerAPI.GenericProjectFile {
+extension BitriseAPI.GenericProjectFile {
 
     /**
     Delete a generic project file

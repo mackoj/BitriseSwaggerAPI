@@ -5,10 +5,10 @@
 //
 
 import Foundation
-import BitriseSwaggerAPIModels
-import BitriseSwaggerAPISharedCode
+import BitriseAPIModels
+import BitriseAPISharedCode
 
-extension BitriseSwaggerAPI.Builds {
+extension BitriseAPI.Builds {
 
     /**
     Get the build log of a build

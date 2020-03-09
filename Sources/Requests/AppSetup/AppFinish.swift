@@ -5,10 +5,10 @@
 //
 
 import Foundation
-import BitriseSwaggerAPIModels
-import BitriseSwaggerAPISharedCode
+import BitriseAPIModels
+import BitriseAPISharedCode
 
-extension BitriseSwaggerAPI.AppSetup {
+extension BitriseAPI.AppSetup {
 
     /**
     Save the application at the end of the app registration process

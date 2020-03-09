@@ -6,9 +6,9 @@
 
 import Foundation
 import Alamofire
-import BitriseSwaggerAPIRequests
-import BitriseSwaggerAPIModels
-import BitriseSwaggerAPISharedCode
+import BitriseAPIRequests
+import BitriseAPIModels
+import BitriseAPISharedCode
 
 /// Manages and sends APIRequests
 public class APIClient {
@@ -38,7 +38,7 @@ public class APIClient {
         self.behaviours = behaviours
         self.defaultHeaders = defaultHeaders
         jsonDecoder.dateDecodingStrategy = .custom(dateDecoder)
-        jsonEncoder.dateEncodingStrategy = .formatted(BitriseSwaggerAPI.dateEncodingFormatter)
+        jsonEncoder.dateEncodingStrategy = .formatted(BitriseAPI.dateEncodingFormatter)
     }
 
     /// Makes a network request

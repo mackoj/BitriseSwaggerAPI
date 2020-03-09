@@ -5,10 +5,10 @@
 //
 
 import Foundation
-import BitriseSwaggerAPIModels
-import BitriseSwaggerAPISharedCode
+import BitriseAPIModels
+import BitriseAPISharedCode
 
-extension BitriseSwaggerAPI.AvatarCandidate {
+extension BitriseAPI.AvatarCandidate {
 
     /**
     Promote an avatar candidate

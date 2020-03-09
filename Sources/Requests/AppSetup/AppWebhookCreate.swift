@@ -5,10 +5,10 @@
 //
 
 import Foundation
-import BitriseSwaggerAPIModels
-import BitriseSwaggerAPISharedCode
+import BitriseAPIModels
+import BitriseAPISharedCode
 
-extension BitriseSwaggerAPI.AppSetup {
+extension BitriseAPI.AppSetup {
 
     /**
     Register an incoming webhook for a specific application

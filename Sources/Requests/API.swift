@@ -7,7 +7,7 @@
 import Foundation
 
 /** Official REST API for Bitrise.io */
-public struct BitriseSwaggerAPI {
+public struct BitriseAPI {
 
     /// Whether to discard any errors when decoding optional properties
     public static var safeOptionalDecoding = true

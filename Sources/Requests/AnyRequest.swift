@@ -5,7 +5,7 @@
 //
 
 import Foundation
-import BitriseSwaggerAPIModels
+import BitriseAPIModels
 
 //MARK: Type erased Requests and Responses
 

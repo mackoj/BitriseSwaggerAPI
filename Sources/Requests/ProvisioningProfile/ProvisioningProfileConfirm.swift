@@ -5,10 +5,10 @@
 //
 
 import Foundation
-import BitriseSwaggerAPIModels
-import BitriseSwaggerAPISharedCode
+import BitriseAPIModels
+import BitriseAPISharedCode
 
-extension BitriseSwaggerAPI.ProvisioningProfile {
+extension BitriseAPI.ProvisioningProfile {
 
     /**
     Confirm a provisioning profile upload

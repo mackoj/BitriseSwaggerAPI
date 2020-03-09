@@ -5,10 +5,10 @@
 //
 
 import Foundation
-import BitriseSwaggerAPIModels
-import BitriseSwaggerAPISharedCode
+import BitriseAPIModels
+import BitriseAPISharedCode
 
-extension BitriseSwaggerAPI.OutgoingWebhook {
+extension BitriseAPI.OutgoingWebhook {
 
     /**
     Create an outgoing webhook for an app

@@ -61,7 +61,7 @@ public struct AnyResponseValue: APIResponseValue, CustomDebugStringConvertible, 
 
 extension APIResponseValue {
     public func asAny() -> AnyResponseValue {
-      return AnyResponseValue(statusCode: statusCode, successful: successful, response: response, responseEnum: self, success: AnyCodable(arrayLiteral: success))
+        return AnyResponseValue(statusCode: statusCode, successful: successful, response: response, responseEnum: self, success: AnyCodable(success))
     }
 }
 

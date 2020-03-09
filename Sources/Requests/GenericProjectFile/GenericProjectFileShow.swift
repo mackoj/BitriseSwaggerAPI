@@ -5,10 +5,10 @@
 //
 
 import Foundation
-import BitriseAPIModels
-import BitriseAPISharedCode
+import BitriseSwaggerAPIModels
+import BitriseSwaggerAPISharedCode
 
-extension BitriseAPI.GenericProjectFile {
+extension BitriseSwaggerAPI.GenericProjectFile {
 
     /**
     Get a specific generic project file

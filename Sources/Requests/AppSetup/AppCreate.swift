@@ -5,10 +5,10 @@
 //
 
 import Foundation
-import BitriseAPIModels
-import BitriseAPISharedCode
+import BitriseSwaggerAPIModels
+import BitriseSwaggerAPISharedCode
 
-extension BitriseAPI.AppSetup {
+extension BitriseSwaggerAPI.AppSetup {
 
     /**
     Add a new app

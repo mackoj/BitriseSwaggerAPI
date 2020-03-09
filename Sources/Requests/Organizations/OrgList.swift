@@ -5,10 +5,10 @@
 //
 
 import Foundation
-import BitriseAPIModels
-import BitriseAPISharedCode
+import BitriseSwaggerAPIModels
+import BitriseSwaggerAPISharedCode
 
-extension BitriseAPI.Organizations {
+extension BitriseSwaggerAPI.Organizations {
 
     /**
     List the organizations that the user is part of

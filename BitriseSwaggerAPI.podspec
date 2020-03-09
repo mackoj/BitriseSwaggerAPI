@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.source_files = '*.swift'
-    s.name = 'BitriseAPI'
+    s.name = 'BitriseSwaggerAPI'
     s.authors = 'Jeffrey MACKO'
     s.summary = 'Official REST API for Bitrise.io'
     s.version = '0.1'

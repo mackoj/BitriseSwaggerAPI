@@ -5,10 +5,10 @@
 //
 
 import Foundation
-import BitriseAPIModels
-import BitriseAPISharedCode
+import BitriseSwaggerAPIModels
+import BitriseSwaggerAPISharedCode
 
-extension BitriseAPI.Activity {
+extension BitriseSwaggerAPI.Activity {
 
     /**
     Get list of Bitrise activity events

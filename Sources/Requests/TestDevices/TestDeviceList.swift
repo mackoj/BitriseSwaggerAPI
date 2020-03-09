@@ -5,10 +5,10 @@
 //
 
 import Foundation
-import BitriseAPIModels
-import BitriseAPISharedCode
+import BitriseSwaggerAPIModels
+import BitriseSwaggerAPISharedCode
 
-extension BitriseAPI.TestDevices {
+extension BitriseSwaggerAPI.TestDevices {
 
     /**
     List the test devices for an app

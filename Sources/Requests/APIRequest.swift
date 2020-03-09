@@ -5,7 +5,7 @@
 //
 
 import Foundation
-import BitriseAPIModels
+import BitriseSwaggerAPIModels
 
 public class APIRequest<ResponseType: APIResponseValue> {
 

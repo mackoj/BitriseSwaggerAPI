@@ -5,10 +5,10 @@
 //
 
 import Foundation
-import BitriseAPIModels
-import BitriseAPISharedCode
+import BitriseSwaggerAPIModels
+import BitriseSwaggerAPISharedCode
 
-extension BitriseAPI.BuildArtifact {
+extension BitriseSwaggerAPI.BuildArtifact {
 
     /**
     Update a build artifact

@@ -5,8 +5,8 @@
 //
 
 import Foundation
-import BitriseAPIRequests
-import BitriseAPISharedCode
+import BitriseSwaggerAPIRequests
+import BitriseSwaggerAPISharedCode
 
 public protocol RequestBehaviour {
 

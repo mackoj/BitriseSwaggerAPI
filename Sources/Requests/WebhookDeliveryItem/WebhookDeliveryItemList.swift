@@ -5,10 +5,10 @@
 //
 
 import Foundation
-import BitriseAPIModels
-import BitriseAPISharedCode
+import BitriseSwaggerAPIModels
+import BitriseSwaggerAPISharedCode
 
-extension BitriseAPI.WebhookDeliveryItem {
+extension BitriseSwaggerAPI.WebhookDeliveryItem {
 
     /**
     List the webhook delivery items of an app

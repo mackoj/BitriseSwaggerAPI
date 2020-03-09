@@ -5,10 +5,10 @@
 //
 
 import Foundation
-import BitriseAPIModels
-import BitriseAPISharedCode
+import BitriseSwaggerAPIModels
+import BitriseSwaggerAPISharedCode
 
-extension BitriseAPI.AndroidKeystoreFile {
+extension BitriseSwaggerAPI.AndroidKeystoreFile {
 
     /**
     Get a list of the android keystore files

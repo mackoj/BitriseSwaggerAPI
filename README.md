@@ -1,10 +1,10 @@
-# BitriseAPI
+# BitriseSwaggerAPI
 
 This is an api generated from a OpenAPI 3.0 spec with [SwagGen](https://github.com/yonaskolb/SwagGen)
 
 ## Operation
 
-Each operation lives under the `BitriseAPI` namespace and within an optional tag: `BitriseAPI(.tagName).operationId`. If an operation doesn't have an operationId one will be generated from the path and method.
+Each operation lives under the `BitriseSwaggerAPI` namespace and within an optional tag: `BitriseSwaggerAPI(.tagName).operationId`. If an operation doesn't have an operationId one will be generated from the path and method.
 
 Each operation has a nested `Request` and a `Response`, as well as a static `service` property
 
@@ -57,7 +57,7 @@ Example request (that is not neccessarily in this api):
 
 ```swift
 
-let getUserRequest = BitriseAPI.User.GetUser.Request(id: 123)
+let getUserRequest = BitriseSwaggerAPI.User.GetUser.Request(id: 123)
 let apiClient = APIClient.default
 
 apiClient.makeRequest(getUserRequest) { apiResponse in
@@ -74,7 +74,7 @@ apiClient.makeRequest(getUserRequest) { apiResponse in
 }
 ```
 
-Each [Request](#request) also has a `makeRequest` convenience function that uses `BitriseAPI.shared`.
+Each [Request](#request) also has a `makeRequest` convenience function that uses `BitriseSwaggerAPI.shared`.
 
 #### APIResponse
 The `APIResponse` that gets passed to the completion closure contains the following properties:
@@ -88,7 +88,7 @@ The `APIResponse` that gets passed to the completion closure contains the follow
 
 #### Encoding and Decoding
 Only JSON requests and responses are supported. These are encoded and decoded by `JSONEncoder` and `JSONDecoder` respectively, using Swift's `Codable` apis.
-There are some options to control how invalid JSON is handled when decoding and these are available as static properties on `BitriseAPI`:
+There are some options to control how invalid JSON is handled when decoding and these are available as static properties on `BitriseSwaggerAPI`:
 
 - `safeOptionalDecoding`: Whether to discard any errors when decoding optional properties. Defaults to `true`.
 - `safeArrayDecoding`: Whether to remove invalid elements instead of throwing when decoding arrays. Defaults to `true`.
@@ -255,50 +255,50 @@ To add support for a specific asynchronous library, just add an extension on `AP
 
 ## Requests
 
-- **BitriseAPI.Activity**
+- **BitriseSwaggerAPI.Activity**
 	- **ActivityList**: GET `/me/activities`
-- **BitriseAPI.Addons**
+- **BitriseSwaggerAPI.Addons**
 	- **AddonListByApp**: GET `/apps/{app-slug}/addons`
 	- **AddonListByOrganization**: GET `/organizations/{organization-slug}/addons`
 	- **AddonListByUser**: GET `/users/{user-slug}/addons`
 	- **AddonsList**: GET `/addons`
 	- **AddonsShow**: GET `/addons/{addon-id}`
-- **BitriseAPI.AndroidKeystoreFile**
+- **BitriseSwaggerAPI.AndroidKeystoreFile**
 	- **AndroidKeystoreFileCreate**: POST `/apps/{app-slug}/android-keystore-files`
 	- **AndroidKeystoreFileList**: GET `/apps/{app-slug}/android-keystore-files`
-- **BitriseAPI.AppSetup**
+- **BitriseSwaggerAPI.AppSetup**
 	- **AppConfigCreate**: POST `/apps/{app-slug}/bitrise.yml`
 	- **AppCreate**: POST `/apps/register`
 	- **AppFinish**: POST `/apps/{app-slug}/finish`
 	- **AppWebhookCreate**: POST `/apps/{app-slug}/register-webhook`
 	- **SshKeyCreate**: POST `/apps/{app-slug}/register-ssh-key`
-- **BitriseAPI.Application**
+- **BitriseSwaggerAPI.Application**
 	- **AppConfigDatastoreShow**: GET `/apps/{app-slug}/bitrise.yml`
 	- **AppList**: GET `/apps`
 	- **AppListByOrganization**: GET `/organizations/{org-slug}/apps`
 	- **AppListByUser**: GET `/users/{user-slug}/apps`
 	- **AppShow**: GET `/apps/{app-slug}`
 	- **BranchList**: GET `/apps/{app-slug}/branches`
-- **BitriseAPI.AvatarCandidate**
+- **BitriseSwaggerAPI.AvatarCandidate**
 	- **AvatarCandidateCreate**: POST `/apps/{app-slug}/avatar-candidates`
 	- **AvatarCandidateList**: GET `/v0.1/apps/{app-slug}/avatar-candidates`
 	- **AvatarCandidatePromote**: PATCH `/apps/{app-slug}/avatar-candidates/{avatar-slug}`
-- **BitriseAPI.BuildArtifact**
+- **BitriseSwaggerAPI.BuildArtifact**
 	- **ArtifactDelete**: DELETE `/apps/{app-slug}/builds/{build-slug}/artifacts/{artifact-slug}`
 	- **ArtifactList**: GET `/apps/{app-slug}/builds/{build-slug}/artifacts`
 	- **ArtifactShow**: GET `/apps/{app-slug}/builds/{build-slug}/artifacts/{artifact-slug}`
 	- **ArtifactUpdate**: PATCH `/apps/{app-slug}/builds/{build-slug}/artifacts/{artifact-slug}`
-- **BitriseAPI.BuildCertificate**
+- **BitriseSwaggerAPI.BuildCertificate**
 	- **BuildCertificateConfirm**: POST `/apps/{app-slug}/build-certificates/{build-certificate-slug}/uploaded`
 	- **BuildCertificateCreate**: POST `/apps/{app-slug}/build-certificates`
 	- **BuildCertificateDelete**: DELETE `/apps/{app-slug}/build-certificates/{build-certificate-slug}`
 	- **BuildCertificateList**: GET `/apps/{app-slug}/build-certificates`
 	- **BuildCertificateShow**: GET `/apps/{app-slug}/build-certificates/{build-certificate-slug}`
 	- **BuildCertificateUpdate**: PATCH `/apps/{app-slug}/build-certificates/{build-certificate-slug}`
-- **BitriseAPI.BuildRequest**
+- **BitriseSwaggerAPI.BuildRequest**
 	- **BuildRequestList**: GET `/apps/{app-slug}/build-requests`
 	- **BuildRequestUpdate**: PATCH `/apps/{app-slug}/build-requests/{build-request-slug}`
-- **BitriseAPI.Builds**
+- **BitriseSwaggerAPI.Builds**
 	- **BuildAbort**: POST `/apps/{app-slug}/builds/{build-slug}/abort`
 	- **BuildBitriseYmlShow**: GET `/apps/{app-slug}/builds/{build-slug}/bitrise.yml`
 	- **BuildList**: GET `/apps/{app-slug}/builds`
@@ -307,35 +307,35 @@ To add support for a specific asynchronous library, just add an extension on `AP
 	- **BuildShow**: GET `/apps/{app-slug}/builds/{build-slug}`
 	- **BuildTrigger**: POST `/apps/{app-slug}/builds`
 	- **BuildWorkflowList**: GET `/apps/{app-slug}/build-workflows`
-- **BitriseAPI.GenericProjectFile**
+- **BitriseSwaggerAPI.GenericProjectFile**
 	- **GenericProjectFileConfirm**: POST `/apps/{app-slug}/generic-project-files/{generic-project-file-slug}/uploaded`
 	- **GenericProjectFileDelete**: DELETE `/apps/{app-slug}/generic-project-files/{generic-project-file-slug}`
 	- **GenericProjectFileList**: GET `/apps/{app-slug}/generic-project-files`
 	- **GenericProjectFileShow**: GET `/apps/{app-slug}/generic-project-files/{generic-project-file-slug}`
 	- **GenericProjectFileUpdate**: PATCH `/apps/{app-slug}/generic-project-files/{generic-project-file-slug}`
 	- **GenericProjectFilesCreate**: POST `/apps/{app-slug}/generic-project-files`
-- **BitriseAPI.Organizations**
+- **BitriseSwaggerAPI.Organizations**
 	- **OrgList**: GET `/organizations`
 	- **OrgShow**: GET `/organizations/{org-slug}`
-- **BitriseAPI.OutgoingWebhook**
+- **BitriseSwaggerAPI.OutgoingWebhook**
 	- **OutgoingWebhookCreate**: POST `/apps/{app-slug}/outgoing-webhooks`
 	- **OutgoingWebhookDelete**: DELETE `/apps/{app-slug}/outgoing-webhooks/{app-webhook-slug}`
 	- **OutgoingWebhookList**: GET `/apps/{app-slug}/outgoing-webhooks`
 	- **OutgoingWebhookUpdate**: PUT `/apps/{app-slug}/outgoing-webhooks/{app-webhook-slug}`
-- **BitriseAPI.ProvisioningProfile**
+- **BitriseSwaggerAPI.ProvisioningProfile**
 	- **ProvisioningProfileConfirm**: POST `/apps/{app-slug}/provisioning-profiles/{provisioning-profile-slug}/uploaded`
 	- **ProvisioningProfileCreate**: POST `/apps/{app-slug}/provisioning-profiles`
 	- **ProvisioningProfileDelete**: DELETE `/apps/{app-slug}/provisioning-profiles/{provisioning-profile-slug}`
 	- **ProvisioningProfileList**: GET `/apps/{app-slug}/provisioning-profiles`
 	- **ProvisioningProfileShow**: GET `/apps/{app-slug}/provisioning-profiles/{provisioning-profile-slug}`
 	- **ProvisioningProfileUpdate**: PATCH `/apps/{app-slug}/provisioning-profiles/{provisioning-profile-slug}`
-- **BitriseAPI.TestDevices**
+- **BitriseSwaggerAPI.TestDevices**
 	- **TestDeviceList**: GET `/apps/{app-slug}/test-devices`
-- **BitriseAPI.User**
+- **BitriseSwaggerAPI.User**
 	- **UserPlan**: GET `/me/plan`
 	- **UserProfile**: GET `/me`
 	- **UserShow**: GET `/users/{user-slug}`
-- **BitriseAPI.WebhookDeliveryItem**
+- **BitriseSwaggerAPI.WebhookDeliveryItem**
 	- **WebhookDeliveryItemList**: GET `/apps/{app-slug}/outgoing-webhooks/{app-webhook-slug}/delivery-items`
 	- **WebhookDeliveryItemRedeliver**: POST `/apps/{app-slug}/outgoing-webhooks/{app-webhook-slug}/delivery-items/{webhook-delivery-item-slug}/redeliver`
 	- **WebhookDeliveryItemShow**: GET `/apps/{app-slug}/outgoing-webhooks/{app-webhook-slug}/delivery-items/{webhook-delivery-item-slug}`

@@ -18,6 +18,6 @@ docker run                                                              \
   --clean all                                                           \
   --verbose
 
-rm -rf BitriseAPI.podspec Cartfile Info.plist Package.swift README.md Sources
+rm -rf *.podspec Cartfile Info.plist Package.swift README.md Sources
 mv Generated/Swift/* .
 rm -rf Generated/Swift

@@ -1,6 +1,6 @@
 formatter: swift
 options:
-  name: BitriseAPI # the name of the API
+  name: BitriseSwaggerAPI # the name of the API
   baseURL: "https://api.bitrise.io/v0.1"
   authors: "Jeffrey MACKO"
   homepage: "https://api-docs.bitrise.io/#/"

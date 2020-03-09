@@ -5,10 +5,10 @@
 //
 
 import Foundation
-import BitriseAPIModels
-import BitriseAPISharedCode
+import BitriseSwaggerAPIModels
+import BitriseSwaggerAPISharedCode
 
-extension BitriseAPI.AppSetup {
+extension BitriseSwaggerAPI.AppSetup {
 
     /** Upload a new bitrise.yml for your application. */
     public enum AppConfigCreate {

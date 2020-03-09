@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "BitriseAPI",
+    name: "BitriseSwaggerAPI",
     products: [
         .library(name: "BitriseAPI", targets: ["BitriseAPIClient"]),
         .library(name: "BitriseAPIDynamic", type: .dynamic, targets: ["BitriseAPIClient"]),

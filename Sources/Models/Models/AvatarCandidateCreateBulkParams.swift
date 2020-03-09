@@ -6,4 +6,4 @@
 
 import Foundation
 
-public typealias AvatarCandidateCreateBulkParams = [V0AvatarCandidateCreateBulkParams]
+//public typealias AvatarCandidateCreateBulkParams = [V0AvatarCandidateCreateBulkParams]

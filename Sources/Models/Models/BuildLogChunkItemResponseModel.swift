@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct BuildLogChunkItemResponseModel: APIBaseModel {
+public struct BuildLogChunkItemResponseModel: APIModel {
 
     public var chunk: String?
 

@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct AddonsAddon: APIBaseModel {
+public struct AddonsAddon: APIModel {
 
     public var bannerImage: String?
 

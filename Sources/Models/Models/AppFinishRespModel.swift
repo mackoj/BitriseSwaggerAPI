@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct AppFinishRespModel: APIBaseModel {
+public struct AppFinishRespModel: APIModel {
 
     public var branchName: String?
 

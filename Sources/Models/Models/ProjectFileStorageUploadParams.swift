@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct ProjectFileStorageUploadParams: APIBaseModel {
+public struct ProjectFileStorageUploadParams: APIModel {
 
     public var uploadFileName: String?
 

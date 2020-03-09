@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct AppUploadParams: APIBaseModel {
+public struct AppUploadParams: APIModel {
 
     /** The slug of the owner of the repository at the git provider */
     public var gitOwner: String?

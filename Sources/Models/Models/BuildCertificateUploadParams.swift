@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct BuildCertificateUploadParams: APIBaseModel {
+public struct BuildCertificateUploadParams: APIModel {
 
     public var uploadFileName: String?
 

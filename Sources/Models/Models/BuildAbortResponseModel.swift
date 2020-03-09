@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct BuildAbortResponseModel: APIBaseModel {
+public struct BuildAbortResponseModel: APIModel {
 
     public var status: String?
 

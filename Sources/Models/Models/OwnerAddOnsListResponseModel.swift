@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct OwnerAddOnsListResponseModel: APIBaseModel {
+public struct OwnerAddOnsListResponseModel: APIModel {
 
     public var data: [OwnerAddOnResponseItemModel]?
 

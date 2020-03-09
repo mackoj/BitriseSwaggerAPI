@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct AvatarCandidateCreateResponseItem: APIBaseModel {
+public struct AvatarCandidateCreateResponseItem: APIModel {
 
     public var filename: String?
 

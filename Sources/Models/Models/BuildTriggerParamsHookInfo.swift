@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct BuildTriggerParamsHookInfo: APIBaseModel {
+public struct BuildTriggerParamsHookInfo: APIModel {
 
     /** Should be "bitrise" */
     public var type: String?

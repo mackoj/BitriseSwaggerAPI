@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct OrganizationListRespModel: APIBaseModel {
+public struct OrganizationListRespModel: APIModel {
 
     public var data: [OrganizationDataModel]?
 

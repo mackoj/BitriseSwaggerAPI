@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct ProvisionProfileResponseItemModel: APIBaseModel {
+public struct ProvisionProfileResponseItemModel: APIModel {
 
     public var downloadURL: String?
 

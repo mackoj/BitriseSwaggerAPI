@@ -12,7 +12,7 @@ options:
   modelSuffix: null # applied to model classes
   modelType: struct # can be struct or class
   modelInheritance: true # must be false for struct modelType
-  modelProtocol: APIBaseModel # the protocol all models conform to
+  modelProtocol: APIModel # the protocol all models conform to
   modelNames: {
     "v0.ActivityEventListResponseModel" : "ActivityEventListResponseModel",
     "v0.ActivityEventResponseItemModel" : "ActivityEventResponseItemModel",

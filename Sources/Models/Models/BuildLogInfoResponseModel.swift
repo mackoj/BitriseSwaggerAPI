@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct BuildLogInfoResponseModel: APIBaseModel {
+public struct BuildLogInfoResponseModel: APIModel {
 
     public var expiringRawLogURL: String?
 

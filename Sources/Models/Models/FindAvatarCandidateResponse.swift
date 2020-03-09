@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct FindAvatarCandidateResponse: APIBaseModel {
+public struct FindAvatarCandidateResponse: APIModel {
 
     public var data: [FindAvatarCandidateResponseItem]?
 

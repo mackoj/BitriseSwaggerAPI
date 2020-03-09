@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct BuildResponseItemModel: APIBaseModel {
+public struct BuildResponseItemModel: APIModel {
 
     public var abortReason: String?
 

@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct AndroidKeystoreFileUploadParams: APIBaseModel {
+public struct AndroidKeystoreFileUploadParams: APIModel {
 
     public var alias: String?
 

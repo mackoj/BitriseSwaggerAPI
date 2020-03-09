@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct ProjectFileStorageListResponseModel: APIBaseModel {
+public struct ProjectFileStorageListResponseModel: APIModel {
 
     public var data: [ProjectFileStorageResponseItemModel]?
 

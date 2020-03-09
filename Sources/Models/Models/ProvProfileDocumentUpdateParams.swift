@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct ProvProfileDocumentUpdateParams: APIBaseModel {
+public struct ProvProfileDocumentUpdateParams: APIModel {
 
     public var isExpose: Bool?
 

@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct AvatarCandidateCreateParams: APIBaseModel {
+public struct AvatarCandidateCreateParams: APIModel {
 
     public var filename: String?
 

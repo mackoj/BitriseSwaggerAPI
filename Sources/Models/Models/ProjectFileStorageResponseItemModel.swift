@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct ProjectFileStorageResponseItemModel: APIBaseModel {
+public struct ProjectFileStorageResponseItemModel: APIModel {
 
     public var downloadURL: String?
 

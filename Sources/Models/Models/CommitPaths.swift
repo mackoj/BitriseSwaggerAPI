@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct CommitPaths: APIBaseModel {
+public struct CommitPaths: APIModel {
 
     public var added: [String]?
 

@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct AppRespModel: APIBaseModel {
+public struct AppRespModel: APIModel {
 
     public var slug: String?
 

@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct AddonsSetupInstruction: APIBaseModel {
+public struct AddonsSetupInstruction: APIModel {
 
     public var cardContent: String?
 

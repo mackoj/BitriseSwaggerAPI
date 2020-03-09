@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct PlanDataModel: APIBaseModel {
+public struct PlanDataModel: APIModel {
 
     public var containerCount: Int?
 

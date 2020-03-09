@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct AddOnAppResponseItemModel: APIBaseModel {
+public struct AddOnAppResponseItemModel: APIModel {
 
     public var icon: String?
 

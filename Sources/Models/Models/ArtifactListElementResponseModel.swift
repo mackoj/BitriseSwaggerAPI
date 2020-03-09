@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct ArtifactListElementResponseModel: APIBaseModel {
+public struct ArtifactListElementResponseModel: APIModel {
 
     public var artifactMeta: String?
 

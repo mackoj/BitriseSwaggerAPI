@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct ServiceStandardErrorRespModel: APIBaseModel {
+public struct ServiceStandardErrorRespModel: APIModel {
 
     public var message: String?
 

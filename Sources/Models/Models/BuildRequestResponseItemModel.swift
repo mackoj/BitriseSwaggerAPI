@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct BuildRequestResponseItemModel: APIBaseModel {
+public struct BuildRequestResponseItemModel: APIModel {
 
     public var buildParams: String?
 

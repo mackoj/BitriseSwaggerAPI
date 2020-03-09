@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct FindAvatarCandidateResponseItem: APIBaseModel {
+public struct FindAvatarCandidateResponseItem: APIModel {
 
     public var downloadURL: String?
 

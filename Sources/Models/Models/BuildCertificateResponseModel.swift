@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct BuildCertificateResponseModel: APIBaseModel {
+public struct BuildCertificateResponseModel: APIModel {
 
     public var data: BuildCertificateResponseItemModel?
 

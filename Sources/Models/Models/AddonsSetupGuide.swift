@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct AddonsSetupGuide: APIBaseModel {
+public struct AddonsSetupGuide: APIModel {
 
     public var instructions: [AddonsSetupInstruction]?
 

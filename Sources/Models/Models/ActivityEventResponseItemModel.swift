@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct ActivityEventResponseItemModel: APIBaseModel {
+public struct ActivityEventResponseItemModel: APIModel {
 
     public var createdAt: String?
 

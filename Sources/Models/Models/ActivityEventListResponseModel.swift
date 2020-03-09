@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct ActivityEventListResponseModel: APIBaseModel {
+public struct ActivityEventListResponseModel: APIModel {
 
     public var data: [ActivityEventResponseItemModel]?
 

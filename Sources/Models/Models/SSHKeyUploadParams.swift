@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct SSHKeyUploadParams: APIBaseModel {
+public struct SSHKeyUploadParams: APIModel {
 
     /** The private part of the SSH key you would like to use */
     public var authSshPrivateKey: String?

@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct AppWebhookListResponseModel: APIBaseModel {
+public struct AppWebhookListResponseModel: APIModel {
 
     public var data: [AppWebhookResponseItemModel]?
 

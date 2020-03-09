@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct AddonsPlan: APIBaseModel {
+public struct AddonsPlan: APIModel {
 
     public var features: [AddonsFeature]?
 

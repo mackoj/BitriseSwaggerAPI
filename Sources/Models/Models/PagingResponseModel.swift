@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct PagingResponseModel: APIBaseModel {
+public struct PagingResponseModel: APIModel {
 
     /** Next is the "anchor" for pagination. This value should be passed to the same endpoint
 to get the next page. Empty/not included if there's no "next" page.

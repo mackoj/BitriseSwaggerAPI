@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct BuildTriggerParamsBuildParams: APIBaseModel {
+public struct BuildTriggerParamsBuildParams: APIModel {
 
     public var branch: String?
 

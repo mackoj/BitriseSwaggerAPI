@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct OrganizationOwner: APIBaseModel {
+public struct OrganizationOwner: APIModel {
 
     public var email: String?
 

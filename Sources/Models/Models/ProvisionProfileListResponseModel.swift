@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct ProvisionProfileListResponseModel: APIBaseModel {
+public struct ProvisionProfileListResponseModel: APIModel {
 
     public var data: [ProvisionProfileResponseItemModel]?
 

@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct AddonsFeature: APIBaseModel {
+public struct AddonsFeature: APIModel {
 
     public var available: Bool?
 

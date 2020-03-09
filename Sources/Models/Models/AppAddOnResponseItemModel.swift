@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct AppAddOnResponseItemModel: APIBaseModel {
+public struct AppAddOnResponseItemModel: APIModel {
 
     public var description: String?
 

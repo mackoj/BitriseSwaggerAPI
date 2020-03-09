@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct AvatarPromoteResponseModel: APIBaseModel {
+public struct AvatarPromoteResponseModel: APIModel {
 
     public var data: AvatarPromoteResponseItemModel?
 

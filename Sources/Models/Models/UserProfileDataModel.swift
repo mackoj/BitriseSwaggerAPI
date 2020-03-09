@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct UserProfileDataModel: APIBaseModel {
+public struct UserProfileDataModel: APIModel {
 
     public var avatarURL: String?
 

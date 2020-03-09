@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct ProvisionProfileUploadParams: APIBaseModel {
+public struct ProvisionProfileUploadParams: APIModel {
 
     public var uploadFileName: String?
 

@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct BuildRequestUpdateResponseModel: APIBaseModel {
+public struct BuildRequestUpdateResponseModel: APIModel {
 
     public var data: BuildRequestResponseItemModel?
 

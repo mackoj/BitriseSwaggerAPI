@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct BuildParamsEnvironment: APIBaseModel {
+public struct BuildParamsEnvironment: APIModel {
 
     public var isExpand: Bool?
 

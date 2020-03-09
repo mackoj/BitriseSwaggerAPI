@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct SSHKeyRespModel: APIBaseModel {
+public struct SSHKeyRespModel: APIModel {
 
     public var status: String?
 

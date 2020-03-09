@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct BuildWorkflowListResponseModel: APIBaseModel {
+public struct BuildWorkflowListResponseModel: APIModel {
 
     public var data: [String]?
 

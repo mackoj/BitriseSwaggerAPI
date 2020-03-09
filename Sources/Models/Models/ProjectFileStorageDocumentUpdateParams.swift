@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct ProjectFileStorageDocumentUpdateParams: APIBaseModel {
+public struct ProjectFileStorageDocumentUpdateParams: APIModel {
 
     public var exposedMetaDatastore: String?
 

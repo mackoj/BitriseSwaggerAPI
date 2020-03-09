@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct WebhookDeliveryItemResponseModel: APIBaseModel {
+public struct WebhookDeliveryItemResponseModel: APIModel {
 
     public var createdAt: String?
 

@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct OrganizationDataModel: APIBaseModel {
+public struct OrganizationDataModel: APIModel {
 
     public var avatarIconURL: String?
 

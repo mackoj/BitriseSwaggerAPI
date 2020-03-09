@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct BranchListResponseModel: APIBaseModel {
+public struct BranchListResponseModel: APIModel {
 
     public var data: [String]?
 

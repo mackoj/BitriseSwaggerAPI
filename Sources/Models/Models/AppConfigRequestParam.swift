@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct AppConfigRequestParam: APIBaseModel {
+public struct AppConfigRequestParam: APIModel {
 
     public var appConfigDatastoreYaml: String?
 

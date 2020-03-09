@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct OwnerAddOnResponseItemModel: APIBaseModel {
+public struct OwnerAddOnResponseItemModel: APIModel {
 
     public var apps: [AddOnAppResponseItemModel]?
 

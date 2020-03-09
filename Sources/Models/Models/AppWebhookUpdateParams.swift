@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct AppWebhookUpdateParams: APIBaseModel {
+public struct AppWebhookUpdateParams: APIModel {
 
     public var events: String?
 

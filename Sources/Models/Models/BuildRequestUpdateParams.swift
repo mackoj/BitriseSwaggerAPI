@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct BuildRequestUpdateParams: APIBaseModel {
+public struct BuildRequestUpdateParams: APIModel {
 
     public var isApproved: Bool?
 

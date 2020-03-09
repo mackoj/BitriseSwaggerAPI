@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct ArtifactShowResponseModel: APIBaseModel {
+public struct ArtifactShowResponseModel: APIModel {
 
     public var data: ArtifactResponseItemModel?
 

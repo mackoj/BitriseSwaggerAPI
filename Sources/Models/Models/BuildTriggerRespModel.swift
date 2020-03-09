@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct BuildTriggerRespModel: APIBaseModel {
+public struct BuildTriggerRespModel: APIModel {
 
     public var buildNumber: Int?
 

@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct AddonsListResponseModel: APIBaseModel {
+public struct AddonsListResponseModel: APIModel {
 
     public var data: [AddonsAddon]?
 

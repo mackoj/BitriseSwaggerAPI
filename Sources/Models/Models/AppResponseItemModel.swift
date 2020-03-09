@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct AppResponseItemModel: APIBaseModel {
+public struct AppResponseItemModel: APIModel {
 
     public var avatarURL: String?
 

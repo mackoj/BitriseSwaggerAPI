@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct AddonsDeveloperLink: APIBaseModel {
+public struct AddonsDeveloperLink: APIModel {
 
     public var title: String?
 

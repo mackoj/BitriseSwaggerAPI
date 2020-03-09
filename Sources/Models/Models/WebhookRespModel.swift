@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct WebhookRespModel: APIBaseModel {
+public struct WebhookRespModel: APIModel {
 
     public var status: String?
 

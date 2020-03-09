@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct OwnerAccountResponseModel: APIBaseModel {
+public struct OwnerAccountResponseModel: APIModel {
 
     public var accountType: String?
 

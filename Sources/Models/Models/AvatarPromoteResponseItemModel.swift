@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct AvatarPromoteResponseItemModel: APIBaseModel {
+public struct AvatarPromoteResponseItemModel: APIModel {
 
     public var isCandidate: Bool?
 

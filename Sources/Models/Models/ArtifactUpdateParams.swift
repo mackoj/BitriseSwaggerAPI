@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct ArtifactUpdateParams: APIBaseModel {
+public struct ArtifactUpdateParams: APIModel {
 
     public var isPublicPageEnabled: Bool?
 

@@ -6,7 +6,7 @@
 
 import Foundation
 
-public struct BuildCertificateUpdateParams: APIBaseModel {
+public struct BuildCertificateUpdateParams: APIModel {
 
     public var certificatePassword: String?
 

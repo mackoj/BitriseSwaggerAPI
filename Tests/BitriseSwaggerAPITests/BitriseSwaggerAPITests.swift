@@ -1,12 +1,12 @@
 import XCTest
-@testable import BitriseSwaggerAPI
+@testable import BitriseAPIClient
 
 final class BitriseSwaggerAPITests: XCTestCase {
-    func testExample() {
-      
-    }
-
-    static var allTests = [
-        ("testExample", testExample),
-    ]
+  func testExample() {
+    XCTAssert(true)
+  }
+  
+  static var allTests = [
+    ("testExample", testExample),
+  ]
 }

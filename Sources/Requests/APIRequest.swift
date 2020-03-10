@@ -138,7 +138,7 @@ extension APIRequest {
       queryItems.append(contentsOf: urlQueryItems)
       urlComponents.queryItems = queryItems
       
-      urlRequest.httpBody = urlComponents.percentEncodedQueryItems?.map { (queryItem) -> String in
+      urlRequest.httpBody = urlComponents.queryItems?.map { (queryItem) -> String in
         "\(queryItem.name)=\(queryItem.value)"
       }.joined(separator: "&").data(using: .utf8, allowLossyConversion: false)
     }

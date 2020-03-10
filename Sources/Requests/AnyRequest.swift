@@ -5,6 +5,9 @@
 //
 
 import Foundation
+#if canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 import BitriseAPIModels
 
 //MARK: Type erased Requests and Responses

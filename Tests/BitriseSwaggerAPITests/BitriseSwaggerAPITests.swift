@@ -3,7 +3,7 @@ import XCTest
 
 final class BitriseSwaggerAPITests: XCTestCase {
     func testExample() {
-      
+      XCTAssertTrue()
     }
 
     static var allTests = [

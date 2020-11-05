@@ -20,4 +20,6 @@ docker run                                                              \
 
 rm -rf *.podspec Cartfile Info.plist Package.swift README.md Sources
 mv Generated/Swift/* .
+swift format --in-place --recursive Generated/Swift
 rm -rf Generated
+
